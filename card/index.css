@@ -1,0 +1,21 @@
+body{
+    background-color: peachpuff;
+    
+}
+.content {
+    margin: 10% 10% 10% 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 5%;
+}
+.card {
+    padding: 5% 10% 5% 10%;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px 10px rgba(12,12,12,0.2);
+    background-color: white;
+    text-align: center;
+}
+.link {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}

@@ -1,0 +1,203 @@
+.desktop{
+    width:100%;
+
+}
+.desktop header{
+    width:90%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    background-color: yellow;
+    height:250px;
+    font-size: 1.5rem;
+}
+.desktop header .top{
+    margin-top: 20px;
+    width: 100%;
+    flex: 2;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desktop header .top h1{
+    font-size: 4rem;
+    margin: 0 0 0 0;
+}
+.desktop header .top .contacts{
+    display:flex;
+    gap: 5%;
+}
+.desktop header .top .contacts div{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    width:20rem;
+    padding: 0 10px 0 10px;
+}
+.desktop header .top .contacts div:hover{
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.desktop header .bottom{
+    width: 100%;
+    height: 6rem;
+    background-color: black;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.desktop .option{
+    margin-left: 2rem;
+    display: flex;
+    gap: 5%;
+}
+.desktop .option div p:hover{
+    color: orange;
+}
+.desktop .pages{
+    display: flex;
+}
+.desktop .pages img{
+    color: white;
+    align-self:center;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 15%;
+}
+.desktop .bottom div div p{
+    color: white;
+    font-size: 1.8rem;
+}
+.desktop .btn{
+    height: 3rem;
+    margin:0 2rem 0 0;
+    padding: 1rem 2rem 0 2rem;
+    border: 1px solid white;
+    color:white;
+}
+.desktop .btn:hover{
+    font-size: 1.7rem;
+}
+.desktop .btn p{
+    margin: 0 0 0 0;
+}
+
+
+
+.mobile{
+    display:none;
+    width:100%;
+}
+.mobile header{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height: 250px;
+    background-color: yellow;
+}
+.mobile header div{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.mobile .top{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.mobile header .top div{
+    padding: 0 0 2% 0;
+    display:flex;
+    align-items: center;
+}
+.mobile header .top div:hover{
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.mobile h1{
+    margin: 0 0 0 0;
+    font-size: 3rem;
+}
+.mobile .bottom{
+    background-color: black;
+}
+.mobile .bottom div{
+    display: flex;
+    width:98%;
+    height:40%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    gap:1%;
+    font-size: 2rem;
+    margin: 1% 0 1% 0;
+    padding: 1% 0 1% 0;
+}
+.mobile .bottom div p{
+    margin: 0 0 0 0;
+}
+.mobile .bottom div img{
+    width: 30px;
+    height: 30px;
+}
+.mobile .bottom div:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.mobile .menu-option{
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size:1.7rem;
+    display: none;
+}
+.mobile .menu-option div{
+    width: 95%;
+    margin: 0 0 2% 5%;
+}
+.mobile .menu-option div p{
+    margin:0 0 0 0;
+}
+.mobile .menu-option div p:hover{
+    color: orangered;
+}
+
+.mobile .pages{
+    display: flex;
+    gap: 1%;
+}
+.mobile .pages img{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+.mobile .btn p{
+    width: 15%;
+    height: 3rem;
+    margin:0 2rem 0 0;
+    padding: 1rem 2rem 0 2rem;
+    border: 1px solid white;
+    color: white !important;
+}
+.mobile .btn p:hover{
+    font-size: 2rem;
+}
+
+
+
+img{
+    width: 50px;
+    height: 50px;
+}
+@media screen and (max-width: 1800px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+

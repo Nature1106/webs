@@ -1,0 +1,322 @@
+body{
+    background-color: beige;
+    font-family: sans-serif;
+    height:100%;
+}
+.container {
+    background-color:white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    height:100%;
+}
+/*navbar section*/
+    nav{
+        display: none;
+        height:5vh;
+        background-color: rgba(106, 62, 4, 0.663);
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap:2%;
+        margin:0.4vh 2vw 0.4vh 2vw;
+        border-radius: 10px;
+    }
+    .menu img{
+        width: 5vw;
+        height:5vw;
+        align-self: center;
+    }
+    .menu p{
+        font-size: 4vw;
+        align-self: center;
+    }
+    .menu:hover{
+        border: 2px solid black;
+    }
+
+/* left section styles*/
+    .left {
+        background-color: rgba(106, 62, 4, 0.663);
+        padding: 0 5% 0 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        height:100%;
+    }
+    /*picture*/
+        .me{
+            width:90%;
+            border-radius: 50%;
+            border: 1px solid;
+            margin: 10% 0 5% 0;
+            padding: 1%;
+        }
+    /*contact details style*/
+        .contacts{
+            width: 100%;
+            margin: 10% 0 5% 0;
+        }
+        .contacts div{
+            width:100%;
+            margin:0 0 5% 0;
+            display: flex;
+            gap: 5%;
+        }
+        .contacts div p{
+            margin: 0 0 0 0;
+            font-size: 2em;
+            align-self: center;
+        }
+        .contacts div img{
+            padding:2% 2% 2% 2%;
+            border: 1px solid;
+            border-radius: 5px;
+            width: 10%;
+        }
+    /*skills style*/
+        .skills{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5% 0 5% 0;
+        }
+        .skills div {
+            width: 100%;
+            margin:0 0 5% 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills div label{
+            font-size: 2rem;
+            margin: 0 0 5% 0;
+        }
+        .skills div input[type="range"]{
+            width: 100%;
+            margin: 0 0 0 0;
+            -webkit-appearance: none;
+            background: transparent;
+        }
+
+        .skills div input::-webkit-slider-runnable-track {
+            -webkit-appearance: none;
+            background: black;
+            /* border: 1px solid black; */
+            height: 0.5rem;
+        }
+        .skills div input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border-radius: 5px;
+            background: black;
+            width:0.5rem;
+            height: 1.5rem;
+            cursor: pointer;
+            margin-top:-8px;
+        }
+    /*language styles*/
+        .language {
+            margin: 5% 0 10% 0 ;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .english{
+            border: 30px solid rgb(65, 49, 6);
+            border-top: 30px solid rgb(214, 210, 193);
+            rotate: 45deg;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 0 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .english p{
+            rotate: -45deg;
+            font-size: 2rem;
+        }
+
+/* right section styles*/
+.right{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    gap: 2%;
+    height:100%;
+}
+
+    /*top*/
+    .top{
+        background-image:url(background.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0 0 0 5%;
+    }
+    .top h1 {
+        margin: 0 0 0 0;
+        font-size: 15rem;
+        width: 100%;
+    }
+    .top h2{
+        margin: 0 0 0 0;
+        width:100%;
+        font-size: 5rem;
+    }
+    /*containt*/
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:flex-end;
+        height: 68%;
+    }
+
+    .topic{
+        width:95%;
+        padding: 0 0 0 5%;
+        background-color: rgba(216, 201, 179, 0.64);
+        display: flex;
+        gap: 3%;
+    }
+    .topic img{
+        width: 5%;
+        padding: 2% 0 2% 0;
+    }
+    .topic h3{
+        font-size: 3rem;
+        align-self: center;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+        /*about me*/
+        .aboutme{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            gap:0.5%;
+            margin:2% 0 2% 0;
+        }
+        .aboutme p{
+            font-size: 2rem;
+            padding: 0 2% 0 13%; 
+        }
+        /*education*/
+        .education{
+            display: flex;
+            flex-wrap: wrap;
+            gap:0.5%;
+            margin:0 0 2% 0;
+        }
+        .para2{
+            font-size: 2rem;
+            padding: 0 0 0 13%; 
+        }
+        /*experience*/
+        .experience{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            gap:0.5%;
+            margin:0 0 2% 0;
+        }
+        .para3{
+            font-size: 2rem;
+            width:74%;
+            display: flex;
+            flex-direction: row;
+            padding: 0 13% 0 13%;
+            justify-content:space-between;
+        }
+
+
+@media screen and (max-width: 2200px){
+    .left{
+        padding:0 10% 0 10% ;
+    }
+    .top{
+        height: 25%;
+    }
+    .top h1{
+        font-size: 7rem;
+    }
+    .top h2{
+        font-size: 2rem;
+    }
+    .aboutme p{
+        font-size: 1.5rem;
+    }
+    .para2{
+        font-size: 1.5rem;
+    }
+    .para3{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .container{
+        height:100vh
+    }
+    .english{
+        width: 200px;
+        height: 200px;
+        border: 15px solid rgb(65, 49, 6);
+        border-top: 15px solid rgb(214, 210, 193);
+    }
+    .topic h3{
+        font-size: 2rem;
+    }
+    .skills div label{
+        font-size: 1.5rem;
+    }
+    .contacts div p{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .container{
+        display:block;
+        height:100%;
+        width:100%;
+    }
+    .left{
+        display:none;
+    }
+    .right{
+        width: 100%;
+        gap: 10%;
+    }
+    nav{
+        display: flex;
+    }
+    .top h1{
+        font-size: 18vw;
+    }
+    .top h2{
+        font-size: 5vw;
+    }
+    .top{
+        height: 20vh;
+    }
+    .topic h3{
+        font-size: 4vw;
+    }
+    .aboutme p{
+        font-size: 3vw;
+    }
+    .para2{
+        font-size: 3vw;
+    }
+    .para3{
+        font-size: 3vw;
+    }
+}
+
+

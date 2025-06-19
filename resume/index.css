@@ -1,0 +1,212 @@
+body{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: sans-serif;
+    
+}
+.container {
+    background-color:white;
+    height: 297mm;
+    width: 210mm;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* left section styles*/
+    .left {
+        background-color: rgba(106, 62, 4, 0.663);
+        padding: 10% 10% 10% 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        height:auto;
+    }
+    /*picture*/
+        .me{
+            width:200px;
+            height:200px;
+            border-radius: 50%;
+            border: 1px solid;
+            margin: 10% 0 10% 0;
+            padding: 1%;
+        }
+    /*contact details style*/
+        .contacts{
+            width: 100%;
+            margin: 10% 0 10% 0;
+        }
+        .contacts div{
+            margin:0 0 10% 0;
+            display: flex;
+            gap: 10%;
+        }
+        .contacts div p{
+            margin: 4% 0 0 0;
+            font-size: 1rem;
+        }
+        .contacts div img{
+            padding:2% 2% 2% 2%;
+            border: 1px solid;
+            border-radius: 5px;
+            height: 20px;
+            width: 20px;
+        }
+    /*skills style*/
+        .skills{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10% 0 10% 0;
+        }
+        .skills div {
+            width: 100%;
+            margin:0 0 10% 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills div label{
+            font-size: 1rem;
+            margin: 0 0 5% 0;
+        }
+        .skills div input[type="range"]{
+            width: 100%;
+            margin: 0 0 0 0;
+            -webkit-appearance: none;
+            background: transparent;
+        }
+
+        .skills div input::-webkit-slider-runnable-track {
+            -webkit-appearance: none;
+            background: black;
+            /* border: 1px solid black; */
+            height: 0.1rem;
+        }
+        .skills div input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border-radius: 5px;
+            background: black;
+            height: 1rem;
+            cursor: pointer;
+            width: 0.15rem;
+            margin-top:-7px;
+        }
+    /*language styles*/
+        .language {
+            margin: 10% 0 10% 0 ;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .english{
+            border: 10px solid rgb(65, 49, 6);
+            border-top: 10px solid rgb(214, 210, 193);
+            rotate: 45deg;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin: 0 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .english p{
+            rotate: -45deg;
+            font-size: 1.2rem;
+        }
+
+/* right section styles*/
+.right{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+    /*top*/
+    .top{
+        background-image:url(background.jpg);
+        width: 100%;
+        height: 18rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0 0 0 5%;
+    }
+    .top h1 {
+        margin: 0 0 0 0;
+        font-size: 5rem;
+        height: 6rem;
+    }
+    .top h2{
+    margin: 0 0 0 0; 
+    }
+    /*containt*/
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:flex-start;
+    }
+
+    .topic{
+        width:95%;
+        padding: 0 0 0 5%;
+        background-color: rgba(216, 201, 179, 0.64);
+        display: flex;
+        gap: 2%;
+    }
+    .topic img{
+        width: 30px;
+        height: 30px;
+        padding: 2% 0 2% 0;
+    }
+    .topic h3{
+        /* font-size: 3rem; */
+        align-self: center;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+        /*about me*/
+        .aboutme{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            gap:0.5%;
+            margin:0 0 5% 0;
+        }
+        .aboutme p{
+            /* font-size: 1rem; */
+            padding: 0 0 0 13%; 
+        }
+        /*education*/
+        .education{
+            display: flex;
+            flex-wrap: wrap;
+            /* align-content: center; */
+            gap:0.5%;
+            margin:0 0 5% 0;
+        }
+        .para2{
+            padding: 0 0 0 13%; 
+        }
+        /*experience*/
+        .experience{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            gap:0.5%;
+            margin:0 0 5% 0;
+        }
+        .para3{
+            width:74%;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            padding: 0 13% 0 13%;
+            justify-content:space-between;
+        }
+
+
+
